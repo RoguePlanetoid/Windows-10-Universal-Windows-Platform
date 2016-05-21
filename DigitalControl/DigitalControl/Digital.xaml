@@ -1,0 +1,49 @@
+﻿<UserControl
+    x:Class="DigitalControl.Digital"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DigitalControl"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid>
+        <Viewbox>
+            <Grid Width="86" Height="188">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Path Name="a" Grid.Row="0" Grid.ColumnSpan="3" Margin="8,0,8,0" 
+                    Data="M 6,0 64,0, 70,6 60,16 10,16 0,6 z" 
+                    Fill="{ThemeResource SystemControlBackgroundAccentBrush}"/>
+                <Ellipse Name="h" Grid.Row="1" Grid.Column="1" Height="16" Width="16" 
+                    Fill="{ThemeResource SystemControlBackgroundAccentBrush}"/>
+                <Path Name="f" Grid.Row="1" Grid.Column="0" Data="M 6,0 16,10 16,60 6,70 0,64 0,6 z"
+                    Fill="{ThemeResource SystemControlBackgroundAccentBrush}"/>
+                <Path Name="b" Grid.Row="1" Grid.Column="3" Data="M 0,10 10,0 16,8 16,64 10,70 0,60 0,10 0,16 z"
+                    Fill="{ThemeResource SystemControlBackgroundAccentBrush}"/>
+                <Path Name="g" Grid.Row="2" Grid.ColumnSpan="3" Margin="8,0,8,0" Data="M 8,0 60,0,68,8 60,16 8,16 0,8 z"
+                    Fill="{ThemeResource SystemControlBackgroundAccentBrush}"/>
+                <Path Name="e" Grid.Row="3" Grid.Column="0"  Data="M 6,0 16,10 16,60 6,70 0,64 0,6 z"
+                    Fill="{ThemeResource SystemControlBackgroundAccentBrush}"/>
+                <Path Name="c" Grid.Row="3" Grid.Column="3" Data="M 0,10 10,0 16,8 16,64 10,70 0,60 0,10 0,16 z"
+                    Fill="{ThemeResource SystemControlBackgroundAccentBrush}"/>
+                <Ellipse Name="i" Grid.Row="3" Grid.Column="1" Height="16" Width="16" 
+                    Fill="{ThemeResource SystemControlBackgroundAccentBrush}"/>
+                <Path Name="d" Grid.Row="4" Grid.ColumnSpan="3" Margin="8,0,8,0" Data="M 10,0 60,0 70,10 64,16 6,16 0,10 z"
+                    Fill="{ThemeResource SystemControlBackgroundAccentBrush}"/>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</UserControl>
